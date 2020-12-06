@@ -1,6 +1,6 @@
 .textCenter { 
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1%;
     }
 
 .pageStyle {
@@ -18,12 +18,23 @@
 .title{
     font: outline;
     color: #ffffff;
-    font-size: 300%;
+    font-size: 275%;
     -webkit-text-stroke: 2px black;
 }
 
 .reglas {
     border-radius: 10%;
-    width: 80%;
+    width: 60%;
     height: auto;
 }
+
+.eleccion{
+    padding: 0.75rem;
+    transition: all .3s;
+    text-align: center;
+}
+
+.elecciones{
+    justify-content: space-around;
+    padding: 2% 2% 2% 2%;
+  }
