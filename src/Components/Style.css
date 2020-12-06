@@ -1,0 +1,29 @@
+.textCenter { 
+    text-align: center;
+    margin-top: 3%;
+    }
+
+.pageStyle {
+    background-color: rgb(132, 196, 252) ;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+
+    /* Preserve aspet ratio */
+     min-width: 100%;
+    min-height: 100%
+
+}
+
+.title{
+    font: outline;
+    color: #ffffff;
+    font-size: 300%;
+    -webkit-text-stroke: 2px black;
+}
+
+.reglas {
+    border-radius: 10%;
+    width: 80%;
+    height: auto;
+}
