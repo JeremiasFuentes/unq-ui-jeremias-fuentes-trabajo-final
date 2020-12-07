@@ -1,6 +1,6 @@
 import React from 'react';
 const Resultado = (props) => {
-    const {ganador,eleccionJ1,eleccionJ2,onClick} = props
+    const {ganador,eleccionJ1,eleccionJ2,modo,onClick} = props
     return (
         <div className="background">
             <div>
@@ -9,11 +9,11 @@ const Resultado = (props) => {
                 </div>
                 <div className="textCenter">
                     <div>
-                        Tu elección:  
+                        Elección Jugador:  
                         <img src={eleccionJ1.imagen} width="100" alt={eleccionJ1.tipo}></img>
                     </div>
                     <div>
-                        Eleccion de la Computadora:                          
+                        Eleccion {modo}:                          
                         <img src={eleccionJ2.imagen} width="100" alt={eleccionJ2.tipo}></img>
                     </div>
                 </div>

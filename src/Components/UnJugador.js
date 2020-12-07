@@ -62,18 +62,20 @@ const UnJugador = () =>{
             </div>
             <h4 className="textCenter">Victorias: {puntosJugador} </h4>
             <h4 className="textCenter">Derrotas: {puntosComputadora} </h4>
-            <div className="textCenter">
-                <h1>Selecciona uno:</h1>
-            </div>
-            <div class="row elecciones">
-                    {opciones.map ( eleccion => (
-                            <div key={eleccion.tipo} className="eleccion">
-                                <img src={eleccion.imagen}  onClick={()=>procesarEleccion(eleccion)} width="100" alt={eleccion.tipo}></img>
-                            </div> 
-                        ))}
+            {!resultados && (<div>
+              <div className="textCenter">
+                  <h1>Selecciona uno:</h1>
               </div>
+              <div class="row elecciones">
+                      {opciones.map ( eleccion => (
+                              <div key={eleccion.tipo} className="eleccion">
+                                  <img src={eleccion.imagen}  onClick={()=>procesarEleccion(eleccion)} width="100" alt={eleccion.tipo}></img>
+                              </div> 
+                          ))}
+                </div>
+                </div>)}
               <div>
-                    {resultados && <Resultado ganador={ganador} eleccionJ1={eleccionJugador} eleccionJ2={eleccionComputadora} onClick={()=>resetear()}/>}
+                    {resultados && <Resultado ganador={ganador} eleccionJ1={eleccionJugador} eleccionJ2={eleccionComputadora} modo="Computadora" onClick={()=>resetear()}/>}
              </div>
         
         </div>
