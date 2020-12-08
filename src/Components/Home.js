@@ -10,9 +10,9 @@ const Home = () =>{
     return(
         <div className="pageStyle">
             <div className="textCenter">
-                <h1 className="title">Piedra, Papel, Tijera, Lagarto o Spock</h1>
-                <img src="https://i.pinimg.com/originals/5c/d4/01/5cd401ba27bba42099f2cd881f695dc2.jpg" className="reglas"></img>
-            </div>
+            <img src="https://www.tribunahacker.com.ar/wp-content/uploads/2014/05/iconogrande.png" width={200}/>
+            </div>   
+            
             <div className="textCenter">
                 <Link to="/un-jugador">
                 <button type="button" className="btn btn-info">Un Jugador</button>
@@ -21,6 +21,11 @@ const Home = () =>{
             <div className="textCenter">
                 <Link to="/dos-jugadores">
                 <button type="button" className="btn btn-info">Dos Jugadores</button>
+                </Link>
+            </div>
+            <div className="textCenter">
+                <Link to="/reglas">
+                <button type="button" className="btn btn-info">Reglas</button>
                 </Link>
             </div>
         

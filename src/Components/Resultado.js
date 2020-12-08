@@ -5,7 +5,7 @@ const Resultado = (props) => {
         <div className="background">
             <div>
                 <div>
-                    <h4 className="textCenter">{ganador}</h4>
+                    <h4 className="ganador textCenter">{ganador}</h4>
                 </div>
                 <div className="textCenter">
                     <div>

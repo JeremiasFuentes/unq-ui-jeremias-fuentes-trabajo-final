@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import "./Style.css"
 import Resultado from "./Resultado"
+import Navbar from "./Navbar";
 
 
 
@@ -56,12 +57,16 @@ const UnJugador = () =>{
   }
 
     return(
+
         <div className="pageStyle">
+          <Navbar/>
             <div className="textCenter">
                 <h1 className="title">Piedra, Papel, Tijera, Lagarto o Spock</h1>
             </div>
-            <h4 className="textCenter">Victorias: {puntosJugador} </h4>
-            <h4 className="textCenter">Derrotas: {puntosComputadora} </h4>
+            <div className="cardP textCenter">
+              <h4 className="textCenter">Victorias: {puntosJugador} </h4>
+              <h4 className="textCenter">Derrotas: {puntosComputadora} </h4>
+            </div>
             {!resultados && (<div>
               <div className="textCenter">
                   <h1>Selecciona uno:</h1>

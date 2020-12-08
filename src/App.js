@@ -7,12 +7,14 @@ import {
 import Home from "./Components/Home";
 import UnJugador from "./Components/UnJugador";
 import DosJugadores from "./Components/DosJugadores";
+import Reglas from "./Components/Reglas";
 
 const App = () => {
   return(
     <Router>
       <div className = "container">
       <Switch>
+          <Route path="/reglas" component={Reglas} />
           <Route path="/un-jugador" component={UnJugador} />
           <Route path="/dos-jugadores" component={DosJugadores} />
           <Route path="/home" component={Home} />
