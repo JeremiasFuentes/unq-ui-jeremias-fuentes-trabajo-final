@@ -12,4 +12,4 @@
 ## Ejecución
 
 - Parado en el directorio de la aplicacion, correr el comando: npm start
-Esto abrirá un ventana en el navegador ubicada en localhost:3000
+- Esto abrirá un ventana en el navegador ubicada en localhost:3000
